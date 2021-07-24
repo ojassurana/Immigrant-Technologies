@@ -28,24 +28,25 @@ Let’s say you are a donor who can only provide remedisvir in your city(delhi),
 
 ## Telegram bot
 
-Telegram bot runs on python and is hosted on lambda and retrieve the data from the user 
+Telegram bot runs on a Python <a href='https://github.com/ojassurana/Immigrant-Technologies/blob/main/Telegram%20Bot/lambda_function.py'>script</a> and is hosted on AWS Lambda where it retrieves the data from the user. As such, this script **WILL NOT WORK IF YOU JUST RUN IT ON ANY PLACE OTHER THAN AWS LAMBDA**.
+After which, we linked it to AWS API Gateway and set up a Telegram Webhook.
 
 ## Auto correct system
 
-uses the levenshtein distance algorithm for the prediction of the words 
+We used the levenshtein distance algorithm for the prediction of the city word incase someone misspells their city. For example, if someone types "Deli" instead of "Delhi", the code will know which is correct word to use as city :) 
 
 ## Webhook
 
-faster than pinging the server multiple times. uses the AWS api gateway to connect the services together in a seamless way 
+Faster and more bandwidth efficient than pinging the server multiple times. Uses the AWS api gateway to connect the services together in a seamless way 
 
 ## MongoDB
 
-MongoDB is used to store data and is hosted on AWS in a mumbai server for min ping 
+MongoDB is used to store data and is hosted on AWS in a mumbai server for min ping.
 
 ## Elastic Beanstalk
 
-fast and efficient scaling of computing resources in the cloud 
+Fast and efficient scaling of computing resources in the cloud 
 
 ## Dynamic tables
 
-usage of dynamic tables to portray the data in a conveyed in a concise manner for the donor to view
+Usage of dynamic tables to portray the data in a conveyed in a concise manner for the donor to view
