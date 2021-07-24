@@ -28,18 +28,24 @@ Let’s say you are a donor who can only provide remedisvir in your city(delhi),
 
 ## Telegram bot
 
-Telegram bot runs on python and is hosted on lambda 
+Telegram bot runs on python and is hosted on lambda and retrieve the data from the user 
 
 ## Auto correct system
 
+uses the levenshtein distance algorithm for the prediction of the words 
+
 ## Webhook
 
-## Lambda function
+faster than pinging the server multiple times. uses the AWS api gateway to connect the services together in a seamless way 
 
 ## MongoDB
 
-## Flask app
+MongoDB is used to store data and is hosted on AWS in a mumbai server for min ping 
 
 ## Elastic Beanstalk
 
+fast and efficient scaling of computing resources in the cloud 
+
 ## Dynamic tables
+
+usage of dynamic tables to portray the data in a conveyed in a concise manner for the donor to view
