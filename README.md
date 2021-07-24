@@ -28,6 +28,8 @@ Let’s say you are a donor who can only provide remedisvir in your city(delhi),
 
 ## Telegram bot
 
+Telegram bot runs on python and is hosted on lambda 
+
 ## Auto correct system
 
 ## Webhook
