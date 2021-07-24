@@ -162,7 +162,7 @@ cities = ['Achalpur', 'Achhnera', 'Adalaj', 'Adilabad', 'Adityapur', 'Adoni', 'A
 def DetailExtractor(UserId):
     global Status_Collection
     global Information_Collection
-    Items = {1: "Oxygen Cylinder", 2: "Hospital bed", 3: "Plasma", 4: "Remedisvir", 5: "Fabiflu", 6: "Tocilizumbad", 7: "Oxygen Refill"}
+    Items = {1: "Oxygen Cylinder", 2: "Hospital bed", 3: "Plasma", 4: "Remedisvir", 5: "Fabiflu", 6: "Tocilizumbad", 7: "Oxygen Refill"} # Just certain example of resources people may require, could add more
     Details = next(Information_Collection.find({'_id': UserId}))
     return 'Your following details are noted:'+'\nPatient Name: '+Details['Name']+'\nLocation: '+Details['Location']+'\nItem: '+ Items[int(Details['Item'])]+'\nPhone Number: '+ Details['Phone Number'] +'\n\nIf you wish to re-enter, type: deleteme'
 
